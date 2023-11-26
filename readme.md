@@ -1,3 +1,3 @@
 ## Lulu's Adventure
 
-Final project for a class. Created an interactive game using just vanilla JavaScript.
+Final project for SI 539. Created an interactive game using just vanilla JavaScript.
