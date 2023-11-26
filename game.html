@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- I used homework 6 HTML as a basic template-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Game</title>
+	<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+<body> 
+<main>
+	<button class="exit-button game-button" onclick="returnMainMenu()">Exit</button>
+	<div id="game">
+		<div id="scoreboard">
+			<div class="scoreboard-row">
+				<img class="scoreboard-img" alt="a red bell pepper" src="images/pepper-1.png"/>
+				<p class="scoreboard-score" id="peppers">0</p>
+			</div>
+			<div class="scoreboard-row">
+				<img class="scoreboard-img" alt="lulu's face, covered in white and black fur" src="images/lulu.png"/>
+				<p class="scoreboard-score" id="lives">10</p>
+			</div>
+		</div>
+	</div>	
+	<div class="modal-container modal-container-game" id="end-game-modal"> 
+		<div class="modal" id="game-over-modal">
+			<p>Your pepper score was <b id="player-score"></b></p>
+			<div>
+				<button class="game-button" onclick="playAgain()">
+					Play Again
+				</button>
+				<button class="game-button" onclick="returnMainMenu()">
+					Main Menu
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="prefers-reduced-explanation">
+        <div class="modal-container"> 
+            <div class="modal">
+                <img class="intro-img" alt="Lulu, a guinea pig with black and white fur" src="images/lulu.png">
+                <p>Sorry, this webpage requires motion.</p>
+                <div class="modal-button-row">
+                    <button class="game-button" onclick="returnMainMenu()">
+						Main Menu
+					</button>
+                </div>
+            </div>
+        </div>	
+    </div>
+</main>
+</body> 
+<script src="js/lulu.js"></script>
+</html>
