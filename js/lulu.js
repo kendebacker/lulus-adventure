@@ -108,6 +108,7 @@ class InteractionObject{
 				if(interactionOccured && this.type === "pepper" && !this.interactionOccured){
 					this.interaction()
 					this.lulu.peppers++
+					this.selector.classList.add("damage")
 					document.querySelector("#peppers").innerText = this.lulu.peppers
 				}
 				if(interactionOccured && this.type === "shy" && !this.interactionOccured){
